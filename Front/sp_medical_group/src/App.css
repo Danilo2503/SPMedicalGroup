@@ -49,3 +49,67 @@ html,body{
   text-align: center;
   border-top: 1px solid #FFFFFF;
 }
+
+#Nav.active .Menu{
+  height: calc(27vh - 50px);
+  visibility: visible;
+  overflow-y: hidden;
+}
+
+#Btn-mobile{
+  display: flex;
+  margin: 0 30px;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: .5rem;
+}
+
+#Hamburguer{
+  width: 20px;
+  border-top: 2px solid;
+  display: block;
+  color: #FFFFFF;
+}
+
+#Hamburguer::after , #Hamburguer::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: .3s;
+  position: relative;
+}
+
+#Nav.active #hamburguer{
+  border-top-color: transparent;
+}
+
+#Nav.active #hamburguer::before{
+  transform: rotate(135deg);
+}
+
+#Nav.active #hamburguer::after{
+  transform: rotate(-135deg);
+  top: -6px;
+}
+
+.Menu a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Bebas Neue';
+  font-weight: 300;
+  font-size: 18px;
+  display: block;
+  padding: .5rem;
+}
+
+.Banner img{
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
