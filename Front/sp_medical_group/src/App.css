@@ -32,5 +32,20 @@ html,body{
   top: 45px;
   right: 1;
   left: 6%;
-  
+  display: block;
+  background-color: #ADD8E6;
+  height: 0;
+  transition: .4s;
+  visibility: hidden;
+  overflow-y: hidden;
+  z-index: 10000;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+
+.Menu a{
+  padding: .2rem 0;
+  margin: 0 .1rem;
+  text-align: center;
+  border-top: 1px solid #FFFFFF;
 }
